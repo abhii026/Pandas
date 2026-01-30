@@ -18,6 +18,7 @@ venv/
 *.xls
 *.json
 *.parquet
+*.txt
 
 # Logs
 *.log
