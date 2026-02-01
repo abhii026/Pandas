@@ -5,7 +5,7 @@
 
 import pandas as pd
 data={
-    "Name":['Abhi',None,'Anuj','Jai','Jeet','Ayush','Shubham','Aman'],
+    "Name":['Abhi','Aryan','Anuj','Jai','Jeet','Ayush','Shubham','Aman'],
     "Age":[20,None,19,21,18,21,25,30],
     "Salary":[50000,None,45000,60000,55000,66000,87400,93210],
     "Performance":[90,None,85,80,60,93,86,89]
@@ -16,5 +16,9 @@ print("---Sample data frame---")
 print(df)
 
 print("\n ---After removing row/column of missing values---")
-df.dropna(inplace=True)
+# df.dropna(inplace=True)
+# df['Age'].fillna(df['Age'].mean(),inplace=True)
+# print(df)
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+df['Salary'] = df['Salary'].fillna(df['Salary'].mean())
 print(df)
