@@ -7,8 +7,8 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
-print("\n\n---Info of dataframe----")
-print(df.describe())
-print("\n\n-----Sorted by Age-----")
-df.sort_values(by=["Age","Salary"],ascending=[True,False],inplace=True)
-print(df)
+# print("\n\n---Info of dataframe----")
+# print(df.describe())
+# print("\n\n-----Sorted by Age-----")
+# df.sort_values(by=["Age","Salary"],ascending=[True,False],inplace=True)
+# print(df)
